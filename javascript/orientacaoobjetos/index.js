@@ -18,6 +18,7 @@ const contaCorrenteAlice = new ContaCorrente();
 contaCorrenteAlice.agencia = 1002;
 contaCorrenteAlice.cliente = cliente2;
 
+//contaCorrenteAlice.saldo = 1000;
 contaCorrenteRicardo.transferir(200, contaCorrenteAlice);
 
 console.log(contaCorrenteRicardo);
