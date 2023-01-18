@@ -1,4 +1,4 @@
-fun testaComportamentoConta() {
+fun testaComportamentosConta() {
     val contaAlex = Conta(titular = "Alex", numero = 1000)
     contaAlex.deposita(200.0)
 
