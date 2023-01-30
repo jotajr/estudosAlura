@@ -3,8 +3,9 @@ package com.jotajr.bytebank.modelo
 class Cliente(
     val nome: String,
     val cpf: String,
-    private val senha: Int
-) : com.jotajr.bytebank.modelo.Autenticavel {
+    private val senha: Int,
+    var endereco : Endereco = Endereco()
+) : Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
         if(this.senha == senha){

@@ -1,7 +1,5 @@
-import com.jotajr.bytebank.teste.testaAutenticacao
-import com.jotajr.bytebank.teste.testaComportamentosConta
+import com.jotajr.bytebank.teste.testaContasDiferentes
 
 fun main() {
-    testaAutenticacao()
-    testaComportamentosConta()
+    testaContasDiferentes()
 }

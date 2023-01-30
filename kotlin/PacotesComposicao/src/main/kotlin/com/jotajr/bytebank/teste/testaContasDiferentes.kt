@@ -3,10 +3,11 @@ package com.jotajr.bytebank.teste
 import com.jotajr.bytebank.modelo.Cliente
 import com.jotajr.bytebank.modelo.ContaCorrente
 import com.jotajr.bytebank.modelo.ContaPoupanca
+import com.jotajr.bytebank.modelo.Endereco
 
 fun testaContasDiferentes() {
 
-    val alex = Cliente("Alex", "87374823", 23);
+    val alex = Cliente("Alex", "87374823", 23, Endereco(logradouro = "Rua Dr Fco Lima Neto, 129"));
     val fran = Cliente("Fran", "8643544343", 32);
 
     val contaCorrente = ContaCorrente(
@@ -17,6 +18,8 @@ fun testaContasDiferentes() {
         titular = fran,
         numero = 1001
     )
+
+    println("O endereco do rapaz eh ${contaCorrente.titular.endereco.logradouro}")
 
     contaCorrente.deposita(1000.0)
     contaPoupanca.deposita(1000.0)

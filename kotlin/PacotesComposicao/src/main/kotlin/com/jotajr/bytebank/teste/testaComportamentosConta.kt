@@ -1,17 +1,19 @@
 package com.jotajr.bytebank.teste
 
 import com.jotajr.bytebank.modelo.Cliente
+import com.jotajr.bytebank.modelo.ContaCorrente
+import com.jotajr.bytebank.modelo.ContaPoupanca
 
 fun testaComportamentosConta() {
 
     val alex = Cliente("Alex", "87374823", 23);
 
-    val contaAlex = com.jotajr.bytebank.modelo.ContaCorrente(titular = alex, numero = 1000)
+    val contaAlex = ContaCorrente(titular = alex, numero = 1000)
     contaAlex.deposita(200.0)
 
     val fran = Cliente("Fran", "8643544343", 32);
 
-    val contaFran = com.jotajr.bytebank.modelo.ContaPoupanca(numero = 1001, titular = fran)
+    val contaFran = ContaPoupanca(numero = 1001, titular = fran)
     contaFran.deposita(300.0)
 
     println(contaFran.titular)
